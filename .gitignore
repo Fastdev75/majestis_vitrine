@@ -1,0 +1,5 @@
+.omc/
+.claude/
+*.zip
+.DS_Store
+Thumbs.db

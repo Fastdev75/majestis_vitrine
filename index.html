@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Majestis</title>
+<meta http-equiv="refresh" content="0; url=Home.html">
+<link rel="canonical" href="Home.html">
+<script>window.location.replace("Home.html");</script>
+</head>
+<body>
+<p>Redirection vers <a href="Home.html">Home.html</a>...</p>
+  <!-- ========================== FOOTER ========================== -->
+  <style>
+    .site-footer {
+      position: relative;
+      z-index: 5;
+      margin-top: 60px;
+      background: #08111c;
+      border-top: 1px solid rgba(217,184,106,0.22);
+      padding: 48px 32px 56px;
+      font-family: 'Jost', sans-serif;
+      color: rgba(244,237,224,0.7);
+    }
+    .site-footer::before {
+      content: ""; position: absolute; top: -1px; left: 0; right: 0; height: 1px;
+      background: linear-gradient(to right, transparent 0%, rgba(217,184,106,0.55) 50%, transparent 100%);
+    }
+    .footer-inner {
+      max-width: 1480px; margin: 0 auto;
+      display: flex; flex-direction: column; align-items: center; gap: 18px;
+      text-align: center;
+    }
+    .footer-social { display: inline-flex; gap: 14px; }
+    .footer-social a {
+      width: 38px; height: 38px;
+      display: inline-flex; align-items: center; justify-content: center;
+      border: 1px solid rgba(217,184,106,0.4);
+      border-radius: 50%;
+      color: #d9b86a;
+      text-decoration: none;
+      transition: background .25s ease, color .25s ease, transform .25s ease, border-color .25s ease;
+    }
+    .footer-social a:hover {
+      background: #d9b86a; color: #08111c;
+      border-color: #d9b86a; transform: translateY(-2px);
+    }
+    .footer-social svg { width: 14px; height: 14px; fill: currentColor; }
+    .footer-copy {
+      font-size: 11px; letter-spacing: 0.28em; text-transform: uppercase;
+      color: rgba(244,237,224,0.55);
+    }
+    .footer-copy span { color: #d9b86a; font-weight: 500; letter-spacing: 0.32em; }
+    .footer-menu {
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 28px;
+      font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase;
+    }
+    .footer-menu a {
+      color: rgba(244,237,224,0.55);
+      text-decoration: none;
+      transition: color .25s ease;
+    }
+    .footer-menu a:hover { color: #e8d3a0; }
+
+    .back-to-top {
+      position: fixed; right: 22px; bottom: 32px;
+      width: 44px; height: 44px;
+      background: rgba(8,11,22,0.78);
+      backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(217,184,106,0.45);
+      border-radius: 50%;
+      color: #d9b86a; cursor: pointer;
+      display: inline-flex; align-items: center; justify-content: center;
+      z-index: 100;
+      opacity: 0; pointer-events: none;
+      transform: translateY(6px);
+      transition: opacity .3s ease, transform .3s ease, background .25s ease, color .25s ease;
+    }
+    .back-to-top.is-visible { opacity: 1; pointer-events: auto; transform: translateY(0); }
+    .back-to-top:hover { background: #d9b86a; color: #08111c; }
+    .back-to-top svg { width: 14px; height: 14px; fill: currentColor; }
+
+    @media (max-width: 600px) {
+      .site-footer { padding: 36px 18px 44px; margin-top: 40px; }
+      .footer-menu { gap: 6px 18px; font-size: 9.5px; }
+      .back-to-top { right: 14px; bottom: 24px; width: 40px; height: 40px; }
+    }
+  </style>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-social" role="list" aria-label="Réseaux sociaux">
+        <a href="#" aria-label="LinkedIn" rel="noopener" role="listitem">
+          <svg aria-hidden="true" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+        </a>
+        <a href="#" aria-label="Instagram" rel="noopener" role="listitem">
+          <svg aria-hidden="true" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+        </a>
+        <a href="#" aria-label="Facebook" rel="noopener" role="listitem">
+          <svg aria-hidden="true" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+        </a>
+      </div>
+      <p class="footer-copy">© 2026 <span>MAJESTIS</span></p>
+      <nav class="footer-menu" aria-label="Liens légaux">
+        <a href="Mentions Legales.html">Mentions légales</a>
+        <a href="Politique de Confidentialite.html">Politique de confidentialité</a>
+      </nav>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Retour en haut de page" type="button" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <svg aria-hidden="true" viewBox="0 0 448 512"><path d="M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z"/></svg>
+  </button>
+
+  <script>
+    (function() {
+      const btt = document.querySelector('.back-to-top');
+      if (!btt) return;
+      const onScroll = () => btt.classList.toggle('is-visible', window.scrollY > 320);
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    })();
+  </script>
+  <!-- ========================== /FOOTER ========================== -->
+
+
+</body>
+</html>
