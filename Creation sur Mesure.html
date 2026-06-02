@@ -494,8 +494,45 @@
     /* Vitrine Majestis : navbar masquée (header + menu mobile) */
     #siteHeader, .mobile-burger, .mobile-drawer { display: none !important; }
   </style>
+  <style>
+    /* Vitrine Majestis : fil d'Ariane (situé sur chaque page) */
+    .vitrine-breadcrumb {
+      position: fixed; top: 22px; left: 50%; transform: translateX(-50%);
+      z-index: 45;
+      display: flex; align-items: center; gap: 9px;
+      max-width: calc(100vw - 28px);
+      padding: 8px 18px;
+      background: rgba(8,11,22,0.55);
+      backdrop-filter: blur(10px) saturate(140%);
+      -webkit-backdrop-filter: blur(10px) saturate(140%);
+      border: 1px solid rgba(217,184,106,0.25);
+      border-radius: 999px;
+      font-family: 'Jost', sans-serif;
+      font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+      white-space: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch;
+      box-shadow: 0 6px 22px rgba(0,0,0,0.32);
+    }
+    .vitrine-breadcrumb::-webkit-scrollbar { display: none; }
+    .vitrine-breadcrumb a { color: rgba(244,237,224,0.72); text-decoration: none; transition: color .25s ease; }
+    .vitrine-breadcrumb a:hover { color: var(--gold-soft, #e8d3a0); }
+    .vitrine-breadcrumb .bc-sep { color: rgba(217,184,106,0.55); font-size: 12px; }
+    .vitrine-breadcrumb .bc-current { color: var(--gold-1, #d9b86a); }
+    @media (max-width: 600px) {
+      .vitrine-breadcrumb { top: 12px; left: 12px; transform: none; font-size: 9.5px; padding: 6px 12px; gap: 6px; }
+    }
+  </style>
 </head>
 <body>
+  <nav class="vitrine-breadcrumb" aria-label="Fil d'Ariane">
+      <a href="Home.html">Accueil</a>
+      <span class="bc-sep" aria-hidden="true">›</span>
+      <a href="Home.html#realisations">Réalisations</a>
+      <span class="bc-sep" aria-hidden="true">›</span>
+      <a href="Heritage Memoire.html">Héritage &amp; Mémoire</a>
+      <span class="bc-sep" aria-hidden="true">›</span>
+      <span class="bc-current">Création sur Mesure</span>
+  </nav>
+
 
   <div class="ambient" aria-hidden="true"></div>
   <div class="grain" aria-hidden="true"></div>
