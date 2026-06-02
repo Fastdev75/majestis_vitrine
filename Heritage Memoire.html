@@ -252,13 +252,29 @@
   .page-title {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 300;
-    font-size: clamp(36px, 4.4vw, 68px);
+    font-size: clamp(28px, 3.3vw, 50px);
     line-height: 1.02;
     letter-spacing: -0.005em;
     color: var(--ivory);
     text-wrap: balance;
     margin-bottom: 22px;
   }
+  /* Initiale & finale décoratives (1re et dernière lettre du titre) */
+  .page-title .ini,
+  .page-title .fin {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.32em;
+    line-height: 0;
+    letter-spacing: 0.01em;
+    background: var(--gold-gradient);
+    background-size: 220% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    filter: drop-shadow(0 0 22px rgba(212,157,62,0.4));
+  }
+  .page-title .fin { font-size: 1.28em; }
   .page-title em {
     font-style: italic;
     font-weight: 500;
@@ -754,8 +770,8 @@
   <!-- Page hero -->
   <section class="page-hero">
     <h1 class="page-title">
-      <span data-i18n="title.t1">Héritage</span>
-      <em data-i18n="title.t2">&amp; Mémoire</em>
+      <span data-i18n="title.t1"><span class="ini">H</span>éritage</span>
+      <em data-i18n="title.t2">&amp; Mémoir<span class="fin">e</span></em>
     </h1>
     <p class="page-sub" data-i18n="page.sub">Deux approches d'un même art&nbsp;: faire vivre les lieux d'exception, qu'il s'agisse de révéler leur âme ou de leur en donner une nouvelle.</p>
     <span class="page-rule" aria-hidden="true"></span>
@@ -993,7 +1009,7 @@
         "nav.contact": "Nous contacter", "nav.contact.eyebrow": "Entrer en relation",
         "nav.contact.client": "Parler de notre projet", "nav.contact.join": "Nous rejoindre",
         "bc.home": "Accueil", "bc.here": "Héritage & Mémoire",
-        "title.t1": "Héritage", "title.t2": "& Mémoire",
+        "title.t1": "<span class=\"ini\">H</span>éritage", "title.t2": "& Mémoir<span class=\"fin\">e</span>",
         "page.sub": "Deux approches d'un même art\u00a0: faire vivre les lieux d'exception, qu'il s'agisse de révéler leur âme ou de leur en donner une nouvelle.",
         "card1.tag": "Restauration", "card1.t1": "Rénovation", "card1.t2": "Authentique",
         "card1.desc": "Préserver, restaurer, révéler — redonner aux ouvrages d'art leur éclat d'origine dans le respect absolu du geste ancien.",
@@ -1016,7 +1032,7 @@
         "nav.contact": "Contact", "nav.contact.eyebrow": "Get in touch",
         "nav.contact.client": "Talk about your project", "nav.contact.join": "Join us",
         "bc.home": "Home", "bc.here": "Heritage & Memory",
-        "title.t1": "Heritage", "title.t2": "& Memory",
+        "title.t1": "<span class=\"ini\">H</span>eritage", "title.t2": "& Memor<span class=\"fin\">y</span>",
         "page.sub": "Two approaches to a single art: keeping exceptional places alive, by revealing their soul, or giving them a new one.",
         "card1.tag": "Restoration", "card1.t1": "Authentic", "card1.t2": "Renovation",
         "card1.desc": "Preserve, restore, reveal — return artworks to their original brilliance with absolute respect for the ancient gesture.",
