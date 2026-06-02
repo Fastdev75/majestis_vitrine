@@ -421,6 +421,130 @@
   .page-title em, .duo-name em { animation: shimmer 12s ease-in-out infinite; background-size: 220% 100%; }
 
 
+
+  /* ---------- Réalisations (fusion Rénovation + Création) ---------- */
+  .reals {
+    position: relative; z-index: 1;
+    padding: 20px 56px 140px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .reals-group {
+    position: relative; z-index: 1;
+    text-align: center;
+    padding-top: 24px;
+  }
+  .reals-group + .real { padding-top: 30px; }
+  .reals-group--second {
+    margin-top: 60px;
+    border-top: 1px solid rgba(217,184,106,0.18);
+    padding-top: 90px;
+  }
+  .reals-group-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: clamp(30px, 3.6vw, 56px);
+    line-height: 1.04;
+    letter-spacing: -0.005em;
+    color: var(--ivory);
+    text-wrap: balance;
+  }
+  .reals-group-title em {
+    font-style: italic; font-weight: 500;
+    background: var(--gold-gradient);
+    background-size: 220% 100%;
+    -webkit-background-clip: text; background-clip: text;
+    color: transparent;
+    animation: shimmer 12s ease-in-out infinite;
+    filter: drop-shadow(0 0 22px rgba(212,157,62,0.35));
+  }
+  .reals-group .page-rule { margin: 26px auto 0; height: 48px; }
+  .real {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(40px, 6vw, 96px);
+    align-items: center;
+    padding: 70px 0;
+  }
+  .real + .real { border-top: 1px solid rgba(217,184,106,0.18); }
+  .real.reverse .real-carousel { order: 2; }
+  .real.reverse .real-text { order: 1; }
+  .real-carousel {
+    position: relative; width: 100%;
+    aspect-ratio: 4/5; overflow: hidden;
+    background: rgba(217,184,106,0.04);
+  }
+  .real-carousel.is-landscape { aspect-ratio: 5/4; max-width: 500px; margin: 0 auto; }
+  .real-carousel .slide {
+    position: absolute; inset: 0;
+    background-size: cover; background-position: center;
+    opacity: 0; transition: opacity 1.2s ease;
+    image-rendering: -webkit-optimize-contrast;
+  }
+  .real-carousel .slide.is-active { opacity: 1; }
+  .real-carousel .dots {
+    position: absolute; bottom: 18px; left: 50%;
+    transform: translateX(-50%);
+    display: flex; gap: 10px; z-index: 4;
+  }
+  .real-carousel .dots button {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: rgba(217,184,106,0.35);
+    border: 0; cursor: pointer; padding: 0;
+    transition: background .3s ease, transform .3s ease;
+  }
+  .real-carousel .dots button.is-active { background: var(--gold-1); transform: scale(1.3); }
+  .real-text { display: flex; flex-direction: column; }
+  .real-tag {
+    font-family: 'Jost', sans-serif;
+    font-size: 10.5px; letter-spacing: 0.42em; text-transform: uppercase;
+    color: var(--gold-1); margin-bottom: 18px;
+    display: inline-flex; align-items: center; gap: 12px;
+  }
+  .real-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: clamp(32px, 3.2vw, 48px);
+    line-height: 1.1; color: var(--ivory);
+    margin-bottom: 26px; text-wrap: balance;
+  }
+  .real-title em {
+    font-style: italic; font-weight: 500;
+    background: var(--gold-gradient); background-size: 220% 100%;
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+    animation: shimmer 12s ease-in-out infinite;
+    filter: drop-shadow(0 0 18px rgba(212,157,62,0.3));
+  }
+  .real-body {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic; font-weight: 400;
+    font-size: clamp(20px, 1.55vw, 26px);
+    line-height: 1.65; color: rgba(244,237,224,0.92);
+    text-wrap: pretty;
+  }
+  .real-body p + p { margin-top: 1em; }
+  .real-list { list-style: none; margin-top: 0.5em; padding: 0; }
+  .real-list li {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic; font-weight: 400;
+    font-size: clamp(19px, 1.45vw, 24px);
+    line-height: 1.55; color: rgba(244,237,224,0.9);
+    padding: 5px 0 5px 24px; position: relative;
+  }
+  .real-list li::before {
+    content: ""; position: absolute; left: 0; top: 0.9em;
+    width: 14px; height: 1px; background: var(--gold-1);
+  }
+  @media (max-width: 900px) {
+    .reals { padding: 10px 24px 100px; }
+    .reals-group--second { padding-top: 70px; margin-top: 40px; }
+    .real, .real.reverse {
+      grid-template-columns: 1fr; gap: 32px; padding: 50px 0;
+    }
+    .real.reverse .real-carousel { order: 1; }
+    .real.reverse .real-text { order: 2; }
+  }
+
   /* ---------- Mobile menu (burger + drawer) ---------- */
   .mobile-burger {
     display: none;
@@ -602,40 +726,221 @@
     <span class="page-rule" aria-hidden="true"></span>
   </section>
 
-  <!-- Duo cards -->
-  <section class="duo">
-    <div class="duo-grid">
-      <a href="Renovation Authentique.html" class="duo-card">
-        <div class="duo-img" style="background-image:url('assets/heritage-renovation.png');"></div>
-        <div class="duo-overlay"></div>
-        <div class="duo-meta">
-          <h2 class="duo-name">
-            <span data-i18n="card1.t1">Rénovation</span><br/>
-            <em data-i18n="card1.t2">Authentique</em>
-          </h2>
-          <span class="duo-cta">
-            <span data-i18n="card.cta">Explorer</span>
-            <span class="ar">→</span>
-          </span>
-        </div>
-      </a>
+  <!-- ============== RÉALISATIONS (fusion) ============== -->
+  <section class="reals">
 
-      <a href="Creation sur Mesure.html" class="duo-card">
-        <div class="duo-img" style="background-image:url('assets/heritage-creation.png');"></div>
-        <div class="duo-overlay"></div>
-        <div class="duo-meta">
-          <h2 class="duo-name">
-            <span data-i18n="card2.t1">Création</span><br/>
-            <em data-i18n="card2.t2">sur Mesure</em>
-          </h2>
-          <span class="duo-cta">
-            <span data-i18n="card.cta">Explorer</span>
-            <span class="ar">→</span>
-          </span>
+    <header class="reals-group">
+      <h2 class="reals-group-title"><span>Rénovation</span> <em>Authentique</em></h2>
+      <span class="page-rule" aria-hidden="true"></span>
+    </header>
+
+    <article class="real">
+      <div class="real-carousel" data-autoplay="3700">
+        <div class="slide is-active" style="background-image:url('assets/realisation-saint-sauveur-01.png');"></div>
+        <div class="slide" style="background-image:url('assets/realisation-saint-sauveur-02.png');"></div>
+        <div class="slide" style="background-image:url('assets/realisation-saint-sauveur-03.png');"></div>
+        <div class="dots"></div>
+      </div>
+      <div class="real-text">
+        <h2 class="real-title">
+          <span data-i18n="r1.t1">Restauration du clocher, des cloches et du beffroi —</span>
+          <em data-i18n="r1.t2">Église Saint-Sauveur</em>
+        </h2>
+        <div class="real-body">
+          <p data-i18n="r1.p1">Le clocher de l'église St-Sauveur est le seul vestige restant de l'église originelle du XII<sup>e</sup> siècle. Il présente aujourd'hui des pathologies résultant de plusieurs facteurs, tels que&nbsp;: l'exposition constante aux évènements météorologiques (pluie, vent) et l'exposition à l'atmosphère marine.</p>
+          <p data-i18n="r1.p2">Nous avons restauré le clocher comprenant le remplacement des pierres de taille selon calepin établi avec l'architecte, rejointoiement complet et restauration des sculptures.</p>
+          <p data-i18n="r1.p3"><em>Principales techniques utilisées&nbsp;:</em> nettoyage des parements par cryogénie et hydrogommage, dégarnissage de joint et de ragréage au mortier de chaux, dessalement, remplacement de 66 m³ de pierre de taille, confortation de maçonnerie, jointoiement au mortier de chaux et patine d'harmonisation.</p>
         </div>
-      </a>
-    </div>
+      </div>
+    </article>
+
+    <!-- 2. La Rochefoucauld -->
+    <article class="real reverse">
+      <div class="real-carousel is-landscape" data-autoplay="3700">
+        <div class="slide is-active" style="background-image:url('assets/realisation-rochefoucauld-01.png');"></div>
+        <div class="slide" style="background-image:url('assets/realisation-rochefoucauld-02.png');"></div>
+        <div class="slide" style="background-image:url('assets/realisation-rochefoucauld-03.png');"></div>
+        <div class="dots"></div>
+      </div>
+      <div class="real-text">
+        <h2 class="real-title">
+          <span data-i18n="r2.t1">La Rochefoucauld —</span>
+          <em data-i18n="r2.t2">Château</em>
+        </h2>
+        <div class="real-body">
+          <p data-i18n="r2.p1">Restauration de l'escalier d'Honneur du château, conduite dans le respect des appareillages et des décors d'origine.</p>
+          <p data-i18n="r2.p2"><em>Principales techniques mises en œuvre&nbsp;:</em> remplacement de blocs en pierre de taille en recherche, dégarnissage et rejointoiement au mortier de chaux, nettoyage des parements par brossage, traitement à l'eau forte pour l'harmonisation et reprise des emmarchements.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- 3. Couronne d'Or — Château des Ducs de Bretagne -->
+    <article class="real">
+      <div class="real-carousel is-landscape" data-autoplay="3700">
+        <div class="slide is-active" style="background-image:url('assets/realisation-bretagne-01.png');"></div>
+        <div class="slide" style="background-image:url('assets/realisation-bretagne-02.png');"></div>
+        <div class="slide" style="background-image:url('assets/realisation-bretagne-03.png');"></div>
+        <div class="slide" style="background-image:url('assets/realisation-bretagne-04.png');"></div>
+        <div class="slide" style="background-image:url('assets/realisation-bretagne-05.png');"></div>
+        <div class="dots"></div>
+      </div>
+      <div class="real-text">
+        <h2 class="real-title">
+          <span data-i18n="r3.t1">Couronne d'Or —</span>
+          <em data-i18n="r3.t2">Château des Ducs de Bretagne</em>
+        </h2>
+        <div class="real-body">
+          <p data-i18n="r3.p1">L'objectif principal du chantier portait sur la restauration de linteaux richement ouvragés, d'encadrements de baies moulurés et des ornementations médiévales associées ainsi que sur la restauration des parements intérieurs et des voûtes des loggias.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- 4. Pont Alexandre III -->
+    <article class="real reverse">
+      <div class="real-carousel is-landscape" data-autoplay="3700">
+        <div class="slide is-active" style="background-image:url('assets/realisation-alexandre3-01.png');"></div>
+        <div class="slide" style="background-image:url('assets/realisation-alexandre3-02.png');"></div>
+        <div class="slide" style="background-image:url('assets/realisation-alexandre3-03.png');"></div>
+        <div class="dots"></div>
+      </div>
+      <div class="real-text">
+        <h2 class="real-title">
+          <span data-i18n="r4.t1">Pont Alexandre III —</span>
+          <em data-i18n="r4.t2">Paris</em>
+        </h2>
+        <div class="real-body">
+          <p data-i18n="r4.p1">Entretien et réparation de la métallerie et des ornements des Ponts de la Seine, Pont Alexandre III.</p>
+          <p data-i18n="r4.p2"><em>Période d'intervention&nbsp;:</em> 2013 – 2017.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- 5. État Major Compiègne -->
+    <article class="real">
+      <div class="real-carousel is-landscape" data-autoplay="3700">
+        <div class="slide is-active" style="background-image:url('assets/realisation-compiegne-01.png');"></div>
+        <div class="slide" style="background-image:url('assets/realisation-compiegne-02.png');"></div>
+        <div class="slide" style="background-image:url('assets/realisation-compiegne-03.png');"></div>
+        <div class="slide" style="background-image:url('assets/realisation-compiegne-04.png');"></div>
+        <div class="slide" style="background-image:url('assets/realisation-compiegne-05.png');"></div>
+        <div class="dots"></div>
+      </div>
+      <div class="real-text">
+        <h2 class="real-title">
+          <span data-i18n="r5.t1">État Major —</span>
+          <em data-i18n="r5.t2">Compiègne</em>
+        </h2>
+        <div class="real-body">
+          <p data-i18n="r5.p1">Restauration de l'entrée majestueuse de l'État Major, et des 5 autres escaliers, à Compiègne.</p>
+        </div>
+      </div>
+    </article>
+
+    <header class="reals-group reals-group--second">
+      <h2 class="reals-group-title"><span>Création</span> <em>sur Mesure</em></h2>
+      <span class="page-rule" aria-hidden="true"></span>
+    </header>
+
+    <article class="real">
+      <div class="real-carousel" data-autoplay="3700">
+        <div class="slide is-active" style="background-image:url('assets/creation-chantilly-01.png');"></div>
+        <div class="slide" style="background-image:url('assets/creation-chantilly-02.png');"></div>
+        <div class="slide" style="background-image:url('assets/creation-chantilly-03.png');"></div>
+        <div class="slide" style="background-image:url('assets/creation-chantilly-04.png');"></div>
+        <div class="slide" style="background-image:url('assets/creation-chantilly-05.png');"></div>
+        <div class="slide" style="background-image:url('assets/creation-chantilly-06.png');"></div>
+        <div class="slide" style="background-image:url('assets/creation-chantilly-07.png');"></div>
+        <div class="dots"></div>
+      </div>
+      <div class="real-text">
+        <h2 class="real-title">
+          <span data-i18n="r1.t1">Château de</span>
+          <em data-i18n="r1.t2">Chantilly</em>
+        </h2>
+        <div class="real-body">
+          <p data-i18n="r1.p1">Restauration du Pavillon Nord et de l'église du Château de Chantilly.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- 2. Mémorial de la Shoah -->
+    <article class="real reverse">
+      <div class="real-carousel is-landscape" data-autoplay="3700">
+        <div class="slide is-active" style="background-image:url('assets/creation-shoah-01.png');"></div>
+        <div class="slide" style="background-image:url('assets/creation-shoah-02.png');"></div>
+        <div class="slide" style="background-image:url('assets/creation-shoah-03.png');"></div>
+        <div class="slide" style="background-image:url('assets/creation-shoah-04.png');"></div>
+        <div class="slide" style="background-image:url('assets/creation-shoah-05.png');"></div>
+        <div class="slide" style="background-image:url('assets/creation-shoah-06.png');"></div>
+        <div class="dots"></div>
+      </div>
+      <div class="real-text">
+        <h2 class="real-title">
+          <span data-i18n="r2.t1">Mémorial de</span>
+          <em data-i18n="r2.t2">la Shoah</em>
+        </h2>
+        <div class="real-body">
+          <p data-i18n="r2.p1">Réhabilitation et création sur mesure d'espaces muséographiques au sein d'un hôtel particulier parisien du Marais, lieu de mémoire dédié à l'histoire de la Shoah.</p>
+          <p data-i18n="r2.p2">L'intervention réconcilie la préservation des décors historiques, boiseries peintes, parquets en point de Hongrie, menuiseries d'origine, et l'intégration discrète d'aménagements contemporains pensés pour l'accueil du public et la conservation des collections.</p>
+          <p data-i18n="r2.p3"><em>Principaux savoir-faire mobilisés&nbsp;:</em> restauration de boiseries et menuiseries d'époque, mise en peinture à l'ancienne, reprise de parquets anciens, conception sur mesure de mobilier muséographique en panneaux laqués et intégration des réseaux techniques en respect du bâti.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- 3. Restauration et conservation d'œuvres d'art -->
+    <article class="real">
+      <div class="real-carousel" data-autoplay="3700">
+        <div class="slide is-active" style="background-image:url('assets/creation-oeuvres-01.png');"></div>
+        <div class="slide" style="background-image:url('assets/creation-oeuvres-02.png');"></div>
+        <div class="dots"></div>
+      </div>
+      <div class="real-text">
+        <h2 class="real-title">
+          <span data-i18n="r3.t1">Restauration et conservation</span>
+          <em data-i18n="r3.t2">d'œuvres d'art</em>
+        </h2>
+        <div class="real-body">
+          <p data-i18n="r3.p1">L'accent est mis sur la diversification de l'activité, avec un renforcement du savoir-faire de production d'œuvres pour le compte d'artistes contemporains.</p>
+          <p data-i18n="r3.p2">L'entreprise poursuit également son activité centrée sur ses savoir-faire de restauration des décors en pierre, en métal et en mosaïque, avec des chantiers emblématiques comme la restauration des statues des apôtres et des évangélistes de la cathédrale Notre-Dame de Paris ou celle des laves émaillées de la Samaritaine.</p>
+        </div>
+      </div>
+    </article>
+
   </section>
+
+  <script>
+    // ---------- Carousels (autoplay + dots) ----------
+    document.querySelectorAll('.real-carousel').forEach(car => {
+      const slides = car.querySelectorAll('.slide');
+      const dotsWrap = car.querySelector('.dots');
+      const delay = parseInt(car.dataset.autoplay || '4500', 10);
+      let i = 0;
+      slides.forEach((_, idx) => {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.setAttribute('aria-label', 'Image ' + (idx + 1));
+        if (idx === 0) b.classList.add('is-active');
+        b.addEventListener('click', () => { go(idx); restart(); });
+        dotsWrap.appendChild(b);
+      });
+      const dots = dotsWrap.querySelectorAll('button');
+      function go(n) {
+        slides[i].classList.remove('is-active');
+        dots[i].classList.remove('is-active');
+        i = (n + slides.length) % slides.length;
+        slides[i].classList.add('is-active');
+        dots[i].classList.add('is-active');
+      }
+      let timer;
+      function start() { stop(); timer = setInterval(() => go(i + 1), delay); }
+      function stop()  { clearInterval(timer); }
+      function restart() { stop(); start(); }
+      car.addEventListener('mouseenter', stop);
+      car.addEventListener('mouseleave', start);
+      start();
+    });
+  </script>
+
 
   <script>
     const I18N = {

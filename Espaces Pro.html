@@ -421,6 +421,130 @@
   .page-title em, .duo-name em { animation: shimmer 12s ease-in-out infinite; background-size: 220% 100%; }
 
 
+
+  /* ---------- Réalisations (fusion Rénovation + Création) ---------- */
+  .reals {
+    position: relative; z-index: 1;
+    padding: 20px 56px 140px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .reals-group {
+    position: relative; z-index: 1;
+    text-align: center;
+    padding-top: 24px;
+  }
+  .reals-group + .real { padding-top: 30px; }
+  .reals-group--second {
+    margin-top: 60px;
+    border-top: 1px solid rgba(217,184,106,0.18);
+    padding-top: 90px;
+  }
+  .reals-group-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: clamp(30px, 3.6vw, 56px);
+    line-height: 1.04;
+    letter-spacing: -0.005em;
+    color: var(--ivory);
+    text-wrap: balance;
+  }
+  .reals-group-title em {
+    font-style: italic; font-weight: 500;
+    background: var(--gold-gradient);
+    background-size: 220% 100%;
+    -webkit-background-clip: text; background-clip: text;
+    color: transparent;
+    animation: shimmer 12s ease-in-out infinite;
+    filter: drop-shadow(0 0 22px rgba(212,157,62,0.35));
+  }
+  .reals-group .page-rule { margin: 26px auto 0; height: 48px; }
+  .real {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(40px, 6vw, 96px);
+    align-items: center;
+    padding: 70px 0;
+  }
+  .real + .real { border-top: 1px solid rgba(217,184,106,0.18); }
+  .real.reverse .real-carousel { order: 2; }
+  .real.reverse .real-text { order: 1; }
+  .real-carousel {
+    position: relative; width: 100%;
+    aspect-ratio: 4/5; overflow: hidden;
+    background: rgba(217,184,106,0.04);
+  }
+  .real-carousel.is-landscape { aspect-ratio: 5/4; max-width: 500px; margin: 0 auto; }
+  .real-carousel .slide {
+    position: absolute; inset: 0;
+    background-size: cover; background-position: center;
+    opacity: 0; transition: opacity 1.2s ease;
+    image-rendering: -webkit-optimize-contrast;
+  }
+  .real-carousel .slide.is-active { opacity: 1; }
+  .real-carousel .dots {
+    position: absolute; bottom: 18px; left: 50%;
+    transform: translateX(-50%);
+    display: flex; gap: 10px; z-index: 4;
+  }
+  .real-carousel .dots button {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: rgba(217,184,106,0.35);
+    border: 0; cursor: pointer; padding: 0;
+    transition: background .3s ease, transform .3s ease;
+  }
+  .real-carousel .dots button.is-active { background: var(--gold-1); transform: scale(1.3); }
+  .real-text { display: flex; flex-direction: column; }
+  .real-tag {
+    font-family: 'Jost', sans-serif;
+    font-size: 10.5px; letter-spacing: 0.42em; text-transform: uppercase;
+    color: var(--gold-1); margin-bottom: 18px;
+    display: inline-flex; align-items: center; gap: 12px;
+  }
+  .real-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: clamp(32px, 3.2vw, 48px);
+    line-height: 1.1; color: var(--ivory);
+    margin-bottom: 26px; text-wrap: balance;
+  }
+  .real-title em {
+    font-style: italic; font-weight: 500;
+    background: var(--gold-gradient); background-size: 220% 100%;
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+    animation: shimmer 12s ease-in-out infinite;
+    filter: drop-shadow(0 0 18px rgba(212,157,62,0.3));
+  }
+  .real-body {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic; font-weight: 400;
+    font-size: clamp(20px, 1.55vw, 26px);
+    line-height: 1.65; color: rgba(244,237,224,0.92);
+    text-wrap: pretty;
+  }
+  .real-body p + p { margin-top: 1em; }
+  .real-list { list-style: none; margin-top: 0.5em; padding: 0; }
+  .real-list li {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic; font-weight: 400;
+    font-size: clamp(19px, 1.45vw, 24px);
+    line-height: 1.55; color: rgba(244,237,224,0.9);
+    padding: 5px 0 5px 24px; position: relative;
+  }
+  .real-list li::before {
+    content: ""; position: absolute; left: 0; top: 0.9em;
+    width: 14px; height: 1px; background: var(--gold-1);
+  }
+  @media (max-width: 900px) {
+    .reals { padding: 10px 24px 100px; }
+    .reals-group--second { padding-top: 70px; margin-top: 40px; }
+    .real, .real.reverse {
+      grid-template-columns: 1fr; gap: 32px; padding: 50px 0;
+    }
+    .real.reverse .real-carousel { order: 1; }
+    .real.reverse .real-text { order: 2; }
+  }
+
   /* ---------- Mobile menu (burger + drawer) ---------- */
   .mobile-burger {
     display: none;
@@ -602,40 +726,229 @@
     <span class="page-rule" aria-hidden="true"></span>
   </section>
 
-  <!-- Duo cards -->
-  <section class="duo">
-    <div class="duo-grid">
-      <a href="Renovation Authentique Pro.html" class="duo-card">
-        <div class="duo-img" style="background-image:url('assets/heritage-renovation.png');"></div>
-        <div class="duo-overlay"></div>
-        <div class="duo-meta">
-          <h2 class="duo-name">
-            <span data-i18n="card1.t1">Rénovation</span><br/>
-            <em data-i18n="card1.t2">Authentique</em>
-          </h2>
-          <span class="duo-cta">
-            <span data-i18n="card.cta">Explorer</span>
-            <span class="ar">→</span>
-          </span>
-        </div>
-      </a>
+  <!-- ============== RÉALISATIONS (fusion) ============== -->
+  <section class="reals">
 
-      <a href="Creation sur Mesure Pro.html" class="duo-card">
-        <div class="duo-img" style="background-image:url('assets/heritage-creation.png');"></div>
-        <div class="duo-overlay"></div>
-        <div class="duo-meta">
-          <h2 class="duo-name">
-            <span data-i18n="card2.t1">Création</span><br/>
-            <em data-i18n="card2.t2">sur Mesure</em>
-          </h2>
-          <span class="duo-cta">
-            <span data-i18n="card.cta">Explorer</span>
-            <span class="ar">→</span>
-          </span>
+    <header class="reals-group">
+      <h2 class="reals-group-title"><span>Rénovation</span> <em>Authentique</em></h2>
+      <span class="page-rule" aria-hidden="true"></span>
+    </header>
+
+    <article class="real">
+      <div class="real-carousel is-landscape" data-autoplay="3700">
+        <div class="slide is-active" style="background-image:url('assets/pro-renov-rochefort-01.png');"></div>
+        <div class="slide" style="background-image:url('assets/pro-renov-rochefort-02.png');"></div>
+        <div class="dots"></div>
+      </div>
+      <div class="real-text">
+        <h2 class="real-title">
+          <span data-i18n="r1.t1">Rochefort —</span>
+          <em data-i18n="r1.t2">Théâtre de la Coupe d'Or</em>
+        </h2>
+        <div class="real-body">
+          <p data-i18n="r1.p1">Restauration intégrale d'un théâtre historique, de la façade aux espaces d'accueil, dans le respect des techniques d'origine.</p>
+          <ul class="real-list">
+            <li data-i18n="r1.l1">Restauration de la façade en pierre et mise en œuvre d'un badigeon polychrome</li>
+            <li data-i18n="r1.l2">Restauration des sols intérieurs en pierre de Chauvigny et terre cuite</li>
+            <li data-i18n="r1.l3">Restauration du hall d'entrée, enduits en faux marbre et réfection des balustrades d'escaliers en pierre de taille</li>
+          </ul>
         </div>
-      </a>
-    </div>
+      </div>
+    </article>
+
+    <!-- 2. Rénovation, construction durables et performantes -->
+    <article class="real reverse">
+      <div class="real-carousel is-landscape" data-autoplay="3700">
+        <div class="slide is-active" style="background-image:url('assets/pro-renov-durable-01.png');"></div>
+        <div class="slide" style="background-image:url('assets/pro-renov-durable-02.png');"></div>
+        <div class="slide" style="background-image:url('assets/pro-renov-durable-03.png');"></div>
+        <div class="slide" style="background-image:url('assets/pro-renov-durable-04.png');"></div>
+        <div class="slide" style="background-image:url('assets/pro-renov-durable-05.png');"></div>
+        <div class="dots"></div>
+      </div>
+      <div class="real-text">
+        <h2 class="real-title">
+          <span data-i18n="r2.t1">Rénovation &amp; construction</span>
+          <em data-i18n="r2.t2">durables et performantes</em>
+        </h2>
+        <div class="real-body">
+          <p data-i18n="r2.p1">Programmes de logements et d'équipements menés en construction bois et matériaux biosourcés, conjuguant exigence architecturale et performance environnementale.</p>
+          <p data-i18n="r2.p2"><em>Expertise technique &amp; environnementale&nbsp;:</em> maîtrise des ossatures et bardages bois, isolation à base de fibres végétales, étanchéité à l'air haute performance et conformité aux référentiels RE2020 et bâtiment bas carbone.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- 3. Hôtel Baur au Lac, Zurich -->
+    <article class="real">
+      <div class="real-carousel is-landscape" data-autoplay="3700">
+        <div class="slide is-active" style="background-image:url('assets/pro-renov-baur-01.png');"></div>
+        <div class="slide" style="background-image:url('assets/pro-renov-baur-02.jpeg');"></div>
+        <div class="slide" style="background-image:url('assets/pro-renov-baur-03.png');"></div>
+        <div class="slide" style="background-image:url('assets/pro-renov-baur-04.jpeg');"></div>
+        <div class="dots"></div>
+      </div>
+      <div class="real-text">
+        <h2 class="real-title">
+          <span data-i18n="r3.t1">Hôtel Baur au Lac —</span>
+          <em data-i18n="r3.t2">Zurich, Suisse</em>
+        </h2>
+        <div class="real-body">
+          <p data-i18n="r3.p1">Le bronze et le fer sont façonnés avec des techniques traditionnelles de ciselûre, de ferronnerie fine, de soudure de précision et d'ajustage.</p>
+          <p data-i18n="r3.p2">Dorure et argenture à la feuille, patine ou encore sertissage de cristaux de Bohême ou de roche…</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- 4. Hôtel Chopard Place Vendôme -->
+    <article class="real reverse">
+      <div class="real-carousel is-landscape" data-autoplay="3700">
+        <div class="slide is-active" style="background-image:url('assets/pro-renov-chopard-01.png');"></div>
+        <div class="slide" style="background-image:url('assets/pro-renov-chopard-02.png');"></div>
+        <div class="slide" style="background-image:url('assets/pro-renov-chopard-03.png');"></div>
+        <div class="dots"></div>
+      </div>
+      <div class="real-text">
+        <h2 class="real-title">
+          <span data-i18n="r4.t1">Hôtel Chopard Place Vendôme —</span>
+          <em data-i18n="r4.t2">lieu mythique d'exception</em>
+        </h2>
+        <div class="real-body">
+          <p data-i18n="r4.p1">À travers un travail de peinture décorative et de dorure à la feuille d'or, l'Atelier Mériguet a ravivé fresques et moulures des chambres de l'hôtel en y apportant une touche contemporaine.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- 5. Charpenterie — bois lamellé collé -->
+    <article class="real">
+      <div class="real-carousel is-landscape" data-autoplay="3700">
+        <div class="slide is-active" style="background-image:url('assets/pro-renov-charpente-01.png');"></div>
+        <div class="slide" style="background-image:url('assets/pro-renov-charpente-02.png');"></div>
+        <div class="slide" style="background-image:url('assets/pro-renov-charpente-03.png');"></div>
+        <div class="dots"></div>
+      </div>
+      <div class="real-text">
+        <h2 class="real-title">
+          <span data-i18n="r5.t1">Charpenterie —</span>
+          <em data-i18n="r5.t2">bois lamellé collé</em>
+        </h2>
+        <div class="real-body">
+          <p data-i18n="r5.p1">Conception et mise en œuvre d'ouvrages de charpente en bois lamellé collé&nbsp;: arcs de grande portée, structures cintrées et auvents intégrés, fabriqués en atelier puis assemblés sur site.</p>
+          <p data-i18n="r5.p2"><em>Expertise technique&nbsp;:</em> diagnostic des désordres, scellement chimique des assemblages, traitement et reprise des bois altérés, dans le respect des classes de service et des règles de l'art.</p>
+        </div>
+      </div>
+    </article>
+
+    <header class="reals-group reals-group--second">
+      <h2 class="reals-group-title"><span>Création</span> <em>sur Mesure</em></h2>
+      <span class="page-rule" aria-hidden="true"></span>
+    </header>
+
+    <article class="real">
+      <div class="real-carousel is-landscape" data-autoplay="3700">
+        <div class="slide is-active" style="background-image:url('assets/pro-creation-amandinois-01.jpeg');"></div>
+        <div class="slide" style="background-image:url('assets/pro-creation-amandinois-02.jpeg');"></div>
+        <div class="slide" style="background-image:url('assets/pro-creation-amandinois-03.jpeg');"></div>
+        <div class="dots"></div>
+      </div>
+      <div class="real-text">
+        <h2 class="real-title">
+          <span data-i18n="r1.t1">Centre aquatique de l'Amandinois —</span>
+          <em data-i18n="r1.t2">Saint-Amand-les-Eaux</em>
+        </h2>
+        <div class="real-body">
+          <p data-i18n="r1.p1">Création d'un Dragon, structure monumentale recouverte de mosaïque.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- 2. Opéra Garnier -->
+    <article class="real reverse">
+      <div class="real-carousel is-landscape" data-autoplay="3700">
+        <div class="slide is-active" style="background-image:url('assets/pro-creation-opera-01.png');"></div>
+        <div class="dots"></div>
+      </div>
+      <div class="real-text">
+        <h2 class="real-title">
+          <span data-i18n="r2.t1">Opéra —</span>
+          <em data-i18n="r2.t2">Garnier</em>
+        </h2>
+        <div class="real-body">
+          <p data-i18n="r2.p1">La structure supportant le plancher de la scène de l'Opéra Garnier se faisant vieillissante, en termes d'état sanitaire des bois comme de confort pour les artistes, l'Opéra National de Paris a lancé un appel d'offres en vue de sa reprise intégrale.</p>
+          <div class="real-groups">
+            <div class="rg-item">
+              <h4 class="rg-title" data-i18n="r2.g1.t">Mise en sécurité &amp; plateforme</h4>
+              <p class="rg-body" data-i18n="r2.g1.b">Plateforme de travail sécurisée sous le plancher (tréteaux et platelage en Kerto).</p>
+            </div>
+            <div class="rg-item">
+              <h4 class="rg-title" data-i18n="r2.g2.t">Dépose &amp; nouvelles sablières</h4>
+              <p class="rg-body" data-i18n="r2.g2.b">Dépose des sablières en bois massif existantes et pose de nouvelles sablières en lamellé-collé chêne GL28h sur les différentes zones de la scène.</p>
+            </div>
+            <div class="rg-item">
+              <h4 class="rg-title" data-i18n="r2.g3.t">Brochage &amp; liaisonnement</h4>
+              <p class="rg-body" data-i18n="r2.g3.b">Liaisonnement des sablières par goujons en fibre de verre scellés à la résine époxydique.</p>
+            </div>
+            <div class="rg-item">
+              <h4 class="rg-title" data-i18n="r2.g4.t">Calage altimétrique</h4>
+              <p class="rg-body" data-i18n="r2.g4.b">Deux niveaux de cales PEHD sous les lambourdes et ajustement par résine époxydique pour respecter le dénivé de plus d'un mètre entre l'avant et le fond de scène.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 3. Hôtel de la Marine — Place de la Concorde -->
+    <article class="real">
+      <div class="real-carousel is-landscape" data-autoplay="3700">
+        <div class="slide is-active" style="background-image:url('assets/pro-creation-marine-01.png');"></div>
+        <div class="slide" style="background-image:url('assets/pro-creation-marine-02.png');"></div>
+        <div class="dots"></div>
+      </div>
+      <div class="real-text">
+        <h2 class="real-title">
+          <span data-i18n="r3.t1">Hôtel de la Marine —</span>
+          <em data-i18n="r3.t2">Place de la Concorde</em>
+        </h2>
+        <div class="real-body">
+          <p data-i18n="r3.p1">À travers un travail de peinture décorative et de dorure à la feuille d'or, l'Atelier Mériguet a ravivé fresques et moulures des chambres de l'hôtel en y apportant une touche contemporaine.</p>
+        </div>
+      </div>
+    </article>
+
   </section>
+
+  <script>
+    // ---------- Carousels (autoplay + dots) ----------
+    document.querySelectorAll('.real-carousel').forEach(car => {
+      const slides = car.querySelectorAll('.slide');
+      const dotsWrap = car.querySelector('.dots');
+      const delay = parseInt(car.dataset.autoplay || '4500', 10);
+      let i = 0;
+      slides.forEach((_, idx) => {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.setAttribute('aria-label', 'Image ' + (idx + 1));
+        if (idx === 0) b.classList.add('is-active');
+        b.addEventListener('click', () => { go(idx); restart(); });
+        dotsWrap.appendChild(b);
+      });
+      const dots = dotsWrap.querySelectorAll('button');
+      function go(n) {
+        slides[i].classList.remove('is-active');
+        dots[i].classList.remove('is-active');
+        i = (n + slides.length) % slides.length;
+        slides[i].classList.add('is-active');
+        dots[i].classList.add('is-active');
+      }
+      let timer;
+      function start() { stop(); timer = setInterval(() => go(i + 1), delay); }
+      function stop()  { clearInterval(timer); }
+      function restart() { stop(); start(); }
+      car.addEventListener('mouseenter', stop);
+      car.addEventListener('mouseleave', start);
+      start();
+    });
+  </script>
+
 
   <script>
     const I18N = {
