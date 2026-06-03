@@ -6,7 +6,7 @@
 <title>Majestis — Héritage & Mémoire</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Great+Vibes&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
 <style>
   :root {
     --gold-1: #d9b86a;
@@ -259,22 +259,32 @@
     text-wrap: balance;
     margin-bottom: 22px;
   }
-  /* Initiale & finale décoratives (1re et dernière lettre du titre) */
+  /* Initiale & finale façon signature (1re et dernière lettre du titre) */
+  /* Police calligraphique, MÊME couleur que le texte (pas de forçage) */
   .page-title .ini,
   .page-title .fin {
-    font-style: italic;
-    font-weight: 500;
-    font-size: 1.32em;
-    line-height: 0;
+    font-family: 'Great Vibes', 'Cormorant Garamond', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.12em;          /* léger ajustement optique : visuellement même taille */
     letter-spacing: 0.01em;
-    background: var(--gold-gradient);
-    background-size: 220% 100%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    filter: drop-shadow(0 0 22px rgba(212,157,62,0.4));
   }
-  .page-title .fin { font-size: 1.28em; }
+  /* la finale reçoit un petit trait de paraphe (à la fin, comme une signature) */
+  .page-title .fin {
+    position: relative;
+    padding-right: 0.08em;
+  }
+  .page-title .fin::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: -0.12em;
+    width: 1.5em;
+    height: 1px;
+    background: linear-gradient(to right, var(--gold-1, #d9b86a) 0%, rgba(217,184,106,0) 100%);
+    opacity: 0.85;
+  }
   .page-title em {
     font-style: italic;
     font-weight: 500;
