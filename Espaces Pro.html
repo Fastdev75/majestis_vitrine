@@ -682,6 +682,29 @@
       .vitrine-breadcrumb { top: 12px; left: 12px; transform: none; font-size: 9.5px; padding: 6px 12px; gap: 6px; }
     }
   </style>
+  <style>
+    /* "Rénovation Authentique" / "Création sur Mesure" : gros et blancs */
+    .reals-group-title {
+      font-weight: 300;
+      font-size: clamp(34px, 4.2vw, 60px);
+      line-height: 1.05;
+      letter-spacing: -0.005em;
+      background: none;
+      color: var(--ivory);
+      -webkit-text-fill-color: var(--ivory);
+    }
+    .reals-group-title em {
+      font-weight: 400;
+      background: none;
+      color: var(--ivory);
+      -webkit-text-fill-color: var(--ivory);
+      animation: none;
+      filter: none;
+    }
+    @media (max-width: 600px) {
+      .page-sub { font-size: 15px; line-height: 1.45; }
+    }
+  </style>
 </head>
 <body>
   <nav class="vitrine-breadcrumb" aria-label="Fil d'Ariane">
