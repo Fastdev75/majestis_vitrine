@@ -220,11 +220,15 @@
 
   .page-title {
     font-family: 'Cormorant Garamond', serif;
-    font-weight: 300;
-    font-size: clamp(36px, 4.4vw, 68px);
-    line-height: 1.02;
-    letter-spacing: -0.005em;
-    color: var(--ivory);
+    font-weight: 400;
+    font-size: clamp(20px, 2vw, 30px);
+    line-height: 1.1;
+    letter-spacing: 0.04em;
+    background: var(--gold-gradient);
+    background-size: 220% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     text-wrap: balance;
     margin-bottom: 22px;
   }
@@ -242,9 +246,7 @@
     50% { background-position: 100% 50%; }
   }
   .page-rule {
-    display: block; width: 1px; height: 56px;
-    background: linear-gradient(to bottom, transparent, var(--gold-1));
-    margin: 36px auto 0;
+    display: none;
   }
 
   /* ---------- Réalisations ---------- */
