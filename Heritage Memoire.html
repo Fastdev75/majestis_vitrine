@@ -305,7 +305,7 @@
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
     font-weight: 400;
-    font-size: clamp(24px, 2.4vw, 36px);
+    font-size: clamp(17px, 1.5vw, 22px);
     color: rgba(244,237,224,0.78);
     max-width: 720px;
     margin: 0 auto;
@@ -731,6 +731,21 @@
       .page-sub { font-size: 15px; line-height: 1.45; }
     }
   </style>
+  <style>
+    /* Léger cadre (thème, blanc) autour du titre + sous-titre */
+    .hero-frame {
+      display: inline-block;
+      margin: 0 auto;
+      padding: 30px clamp(28px, 5vw, 58px) 26px;
+      border: 1px solid rgba(244,237,224,0.30);
+      box-shadow: inset 0 0 0 1px rgba(244,237,224,0.06);
+      position: relative;
+    }
+    .hero-frame .page-sub { margin-bottom: 4px; }
+    @media (max-width: 600px) {
+      .hero-frame { padding: 22px 20px 18px; }
+    }
+  </style>
 </head>
 <body>
   <nav class="vitrine-breadcrumb" aria-label="Fil d'Ariane">
@@ -807,11 +822,13 @@
 
   <!-- Page hero -->
   <section class="page-hero">
-    <h1 class="page-title">
-      <span data-i18n="title.t1"><span class="ini">H</span>éritage</span>
-      <em data-i18n="title.t2">&amp; Mémoir<span class="fin">e</span></em>
+    <div class="hero-frame">
+      <h1 class="page-title">
+      <span data-i18n="title.t1">Héritage</span>
+      <em data-i18n="title.t2">&amp; Mémoire</em>
     </h1>
     <p class="page-sub" data-i18n="page.sub">Deux approches d'un même art&nbsp;: faire vivre les lieux d'exception, qu'il s'agisse de révéler leur âme ou de leur en donner une nouvelle.</p>
+    </div>
     <span class="page-rule" aria-hidden="true"></span>
   </section>
 
@@ -838,7 +855,15 @@
         <div class="real-body">
           <p data-i18n="r1.p1">Le clocher de l'église St-Sauveur est le seul vestige restant de l'église originelle du XII<sup>e</sup> siècle. Il présente aujourd'hui des pathologies résultant de plusieurs facteurs, tels que&nbsp;: l'exposition constante aux évènements météorologiques (pluie, vent) et l'exposition à l'atmosphère marine.</p>
           <p data-i18n="r1.p2">Nous avons restauré le clocher comprenant le remplacement des pierres de taille selon calepin établi avec l'architecte, rejointoiement complet et restauration des sculptures.</p>
-          <p data-i18n="r1.p3"><em>Principales techniques utilisées&nbsp;:</em> nettoyage des parements par cryogénie et hydrogommage, dégarnissage de joint et de ragréage au mortier de chaux, dessalement, remplacement de 66 m³ de pierre de taille, confortation de maçonnerie, jointoiement au mortier de chaux et patine d'harmonisation.</p>
+          <p class="real-techlabel"><em>Principales techniques utilisées&nbsp;:</em></p>
+          <ul class="real-list">
+            <li>Nettoyage des parements par cryogénie et hydrogommage</li>
+            <li>Dégarnissage de joint et ragréage au mortier de chaux</li>
+            <li>Dessalement</li>
+            <li>Remplacement de 66&nbsp;m³ de pierre de taille</li>
+            <li>Confortation de maçonnerie</li>
+            <li>Jointoiement au mortier de chaux et patine d'harmonisation</li>
+          </ul>
         </div>
       </div>
     </article>
@@ -858,7 +883,14 @@
         </h2>
         <div class="real-body">
           <p data-i18n="r2.p1">Restauration de l'escalier d'Honneur du château, conduite dans le respect des appareillages et des décors d'origine.</p>
-          <p data-i18n="r2.p2"><em>Principales techniques mises en œuvre&nbsp;:</em> remplacement de blocs en pierre de taille en recherche, dégarnissage et rejointoiement au mortier de chaux, nettoyage des parements par brossage, traitement à l'eau forte pour l'harmonisation et reprise des emmarchements.</p>
+          <p class="real-techlabel"><em>Principales techniques mises en œuvre&nbsp;:</em></p>
+          <ul class="real-list">
+            <li>Remplacement de blocs en pierre de taille en recherche</li>
+            <li>Dégarnissage et rejointoiement au mortier de chaux</li>
+            <li>Nettoyage des parements par brossage</li>
+            <li>Traitement à l'eau forte pour l'harmonisation</li>
+            <li>Reprise des emmarchements</li>
+          </ul>
         </div>
       </div>
     </article>
@@ -1047,7 +1079,7 @@
         "nav.contact": "Nous contacter", "nav.contact.eyebrow": "Entrer en relation",
         "nav.contact.client": "Parler de notre projet", "nav.contact.join": "Nous rejoindre",
         "bc.home": "Accueil", "bc.here": "Héritage & Mémoire",
-        "title.t1": "<span class=\"ini\">H</span>éritage", "title.t2": "& Mémoir<span class=\"fin\">e</span>",
+        "title.t1": "Héritage", "title.t2": "& Mémoire",
         "page.sub": "Deux approches d'un même art\u00a0: faire vivre les lieux d'exception, qu'il s'agisse de révéler leur âme ou de leur en donner une nouvelle.",
         "card1.tag": "Restauration", "card1.t1": "Rénovation", "card1.t2": "Authentique",
         "card1.desc": "Préserver, restaurer, révéler — redonner aux ouvrages d'art leur éclat d'origine dans le respect absolu du geste ancien.",
@@ -1070,7 +1102,7 @@
         "nav.contact": "Contact", "nav.contact.eyebrow": "Get in touch",
         "nav.contact.client": "Talk about your project", "nav.contact.join": "Join us",
         "bc.home": "Home", "bc.here": "Heritage & Memory",
-        "title.t1": "<span class=\"ini\">H</span>eritage", "title.t2": "& Memor<span class=\"fin\">y</span>",
+        "title.t1": "Heritage", "title.t2": "& Memory",
         "page.sub": "Two approaches to a single art: keeping exceptional places alive, by revealing their soul, or giving them a new one.",
         "card1.tag": "Restoration", "card1.t1": "Authentic", "card1.t2": "Renovation",
         "card1.desc": "Preserve, restore, reveal — return artworks to their original brilliance with absolute respect for the ancient gesture.",

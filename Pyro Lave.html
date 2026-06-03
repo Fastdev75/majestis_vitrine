@@ -614,6 +614,21 @@
       .vitrine-breadcrumb { top: 12px; left: 12px; transform: none; font-size: 9.5px; padding: 6px 12px; gap: 6px; }
     }
   </style>
+  <style>
+    /* Léger cadre (thème, blanc) autour du titre + sous-titre */
+    .hero-frame {
+      display: inline-block;
+      margin: 0 auto;
+      padding: 30px clamp(28px, 5vw, 58px) 26px;
+      border: 1px solid rgba(244,237,224,0.30);
+      box-shadow: inset 0 0 0 1px rgba(244,237,224,0.06);
+      position: relative;
+    }
+    .hero-frame .page-sub { margin-bottom: 4px; }
+    @media (max-width: 600px) {
+      .hero-frame { padding: 22px 20px 18px; }
+    }
+  </style>
 </head>
 <body>
   <nav class="vitrine-breadcrumb" aria-label="Fil d'Ariane">
@@ -690,10 +705,12 @@
 
   <!-- Page hero -->
   <section class="page-hero">
-    <h1 class="page-title">
+    <div class="hero-frame">
+      <h1 class="page-title">
       <em data-i18n="title.t1">Pyro Lave</em>
     </h1>
     <p class="page-sub" data-i18n="cat.sub">La pierre de lave émaillée de Volvic, née du volcan et façonnée dans nos ateliers.</p>
+    </div>
 
     <div class="lava-intro">
       <p data-i18n="intro.p1">Née des entrailles de la Terre, façonnée par le temps et les éléments, la lave changée en pierre est la matière première de notre travail.</p>
