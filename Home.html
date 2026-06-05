@@ -590,14 +590,11 @@
     gap: 28px;
     grid-template-areas:
       "sm1 sm2"
-      "big big"
-      "sm3 sm4";
+      "big big";
   }
   .real-card--big { grid-area: big; }
-  .real-card--sm:nth-of-type(2) { grid-area: sm1; }
-  .real-card--sm:nth-of-type(3) { grid-area: sm2; }
-  .real-card--sm:nth-of-type(4) { grid-area: sm3; }
-  .real-card--sm:nth-of-type(5) { grid-area: sm4; }
+  .real-card--sm:nth-of-type(1) { grid-area: sm1; }
+  .real-card--sm:nth-of-type(2) { grid-area: sm2; }
 
   .real-card {
     position: relative;
@@ -704,7 +701,7 @@
     }
     .real-grid {
       grid-template-columns: 1fr;
-      grid-template-areas: "sm1" "sm2" "big" "sm3" "sm4";
+      grid-template-areas: "sm1" "sm2" "big";
       gap: 18px;
     }
     .real-card--big { aspect-ratio: 4/3; min-height: 240px; }
@@ -920,34 +917,17 @@
     <div class="real-wrap">
       <header class="section-head">
         <h2 class="section-title" data-i18n="real.title">Nos Réalisations</h2>
-        <p class="section-sub" data-i18n="real.sub">Trois univers, trois manières de transcender le patrimoine&nbsp;: monuments d'histoire, résidences d'exception, lieux de travail réinventés.</p>
+        <p class="section-sub" data-i18n="real.sub">Trois univers, trois manières de transcender le patrimoine&nbsp;: intérieurs d'exception, extérieurs et façades, décoration &amp; finition.</p>
       </header>
 
       <div class="real-grid">
-        <!-- Big card -->
-        <a href="Heritage Memoire.html" class="real-card real-card--big" data-cat="heritage">
-          <div class="real-img" style="background-image:url('assets/realisation-heritage.png');"></div>
-          <div class="real-overlay"></div>
-          <div class="real-meta">
-            <h3 class="real-name">
-              <span data-i18n="real.heritage.t1">Héritage</span>
-              <em data-i18n="real.heritage.t2">&amp; Mémoire</em>
-            </h3>
-            <span class="real-cta">
-              <span data-i18n="real.discover">Explorer</span>
-              <span class="ar">→</span>
-            </span>
-          </div>
-        </a>
-
-        <!-- Two small cards -->
-        <a href="Residences d'Exception.html" class="real-card real-card--sm" data-cat="residence">
+        <!-- Deux petites cartes -->
+        <a href="Interieur.html" class="real-card real-card--sm" data-cat="interieur">
           <div class="real-img" style="background-image:url('assets/realisation-residence.png');"></div>
           <div class="real-overlay"></div>
           <div class="real-meta">
             <h3 class="real-name">
-              <span data-i18n="real.residence.t1">Résidences</span>
-              <em data-i18n="real.residence.t2">d'Exception</em>
+              <em data-i18n="real.interieur.t1">Intérieur</em>
             </h3>
             <span class="real-cta">
               <span data-i18n="real.discover">Explorer</span>
@@ -956,13 +936,12 @@
           </div>
         </a>
 
-        <a href="Espaces Pro.html" class="real-card real-card--sm" data-cat="pro">
-          <div class="real-img" style="background-image:url('assets/realisation-pro.png');"></div>
+        <a href="Exterieur.html" class="real-card real-card--sm" data-cat="exterieur">
+          <div class="real-img" style="background-image:url('assets/realisation-rochefoucauld-01.png');"></div>
           <div class="real-overlay"></div>
           <div class="real-meta">
             <h3 class="real-name">
-              <span data-i18n="real.pro.t1">Espaces Professionnels</span>
-              <em data-i18n="real.pro.t2">Réinventés</em>
+              <em data-i18n="real.exterieur.t1">Extérieur</em>
             </h3>
             <span class="real-cta">
               <span data-i18n="real.discover">Explorer</span>
@@ -971,24 +950,8 @@
           </div>
         </a>
 
-        <!-- Structure & Aménagement -->
-        <a href="Structure et Amenagement.html" class="real-card real-card--sm" data-cat="struct">
-          <div class="real-img" style="background-image:url('uploads/new_structure.png');"></div>
-          <div class="real-overlay"></div>
-          <div class="real-meta">
-            <h3 class="real-name">
-              <span data-i18n="real.struct.t1">Structure</span>
-              <em data-i18n="real.struct.t2">&amp; Aménagement</em>
-            </h3>
-            <span class="real-cta">
-              <span data-i18n="real.discover">Explorer</span>
-              <span class="ar">→</span>
-            </span>
-          </div>
-        </a>
-
-        <!-- Décoration & Finition -->
-        <a href="Decoration et Finition.html" class="real-card real-card--sm" data-cat="deco">
+        <!-- Décoration & Finition (grande carte) -->
+        <a href="Decoration et Finition.html" class="real-card real-card--big" data-cat="deco">
           <div class="real-img" style="background-image:url('uploads/new_deco_finition.png');"></div>
           <div class="real-overlay"></div>
           <div class="real-meta">
@@ -1039,7 +1002,9 @@
         "nav.contact.client": "Parler de notre projet",
         "nav.contact.join": "Nous rejoindre",
         "real.title": "Nos Réalisations",
-        "real.sub": "Trois univers, trois manières de transcender le patrimoine\u00a0: monuments d'histoire, résidences d'exception, lieux de travail réinventés.",
+        "real.sub": "Trois univers, trois manières de transcender le patrimoine\u00a0: intérieurs d'exception, extérieurs et façades, décoration & finition.",
+        "real.interieur.t1": "Intérieur",
+        "real.exterieur.t1": "Extérieur",
         "real.discover": "Explorer",
         "real.heritage.tag": "Monuments",
         "real.heritage.t1": "Héritage",
@@ -1098,7 +1063,9 @@
         "nav.contact.client": "Talk about your project",
         "nav.contact.join": "Join us",
         "real.title": "Our Projects",
-        "real.sub": "Three worlds, three ways to transcend heritage: historic monuments, exceptional residences, reinvented workplaces.",
+        "real.sub": "Three worlds, three ways to transcend heritage: exceptional interiors, exteriors and façades, decoration & finish.",
+        "real.interieur.t1": "Interior",
+        "real.exterieur.t1": "Exterior",
         "real.discover": "Explore",
         "real.heritage.tag": "Monuments",
         "real.heritage.t1": "Heritage",
