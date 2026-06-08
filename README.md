@@ -1,20 +1,50 @@
 # Majestis — Site vitrine
 
 Site statique (HTML/CSS/JS vanilla) hébergé sur GitHub Pages.
+Deux dépôts jumeaux : **site complet** (`majestis`) et **vitrine** (`majestis_vitrine`).
 
 ---
 
-## 📸 À FAIRE — Maxime : images à fournir / identifier
+## 🗺️ Étapes restantes — feuille de route
 
-La réorganisation des photos de réalisations est en cours. Pour la terminer,
-**certaines images doivent être fournies ou identifiées**.
+> Tout s'applique **sur les 2 sites**, **1 commit par catégorie** (rollback facile).
+> ⛔ = bloqué tant que Maxime n'a pas fourni/identifié la photo (voir § Images plus bas).
 
-> 👉 **Merci d'ajouter les images manquantes dans le fichier ZIP de la banque
-> d'images** (le même que `wetransfer_banque-images-site`), avec un nom clair,
-> ou de préciser à quoi correspondent les candidates ci-dessous.
+### Intérieur
+- [x] **Sol** — Opéra Garnier (plancher de scène) ✅
+- [ ] **Sol** — ajouter **Oiron** (parquet), **SHOAH** (vues où l'on voit le sol), **SELE** (dallage)
+- [ ] **Mur** — ajouter les photos **SHOAH** où l'on voit le mur (boiseries / pierre de taille)
+- [ ] **Charpente** — ajouter le « **gymnase** » ⛔
+- [ ] **Bibliothèque** — ajouter la réalisation (il n'y en a qu'une) ⛔
+- [ ] **Salle de bain** — reprendre les **2 photos déjà dans Sol** (doublons acceptés)
+- [ ] **Dressing** — ajouter la réalisation (« dans le PowerPoint ») ⛔
+- [ ] **Escaliers** — **séparer** escalier intérieur / escalier extérieur
+- [ ] **Chambre** — projet **client privé** ⛔
+- [ ] **Salon** — projet **client privé** ⛔
 
-### 1. Photos à IDENTIFIER (les fichiers existent, il faut me dire lequel c'est)
-Candidates rassemblées dans le dossier de travail `_a_identifier/` :
+### Extérieur
+- [ ] **Pont** — **Alexandre III** (Tollis)
+- [ ] **Couronne d'Or** — **Château des Ducs de Bretagne** ⚠️ corriger la carte actuelle qui montre les **Invalides** (faux)
+- [ ] **Entrée** — **État-Major de Compiègne**
+- [ ] **Clocher** — **église Saint-Sauveur**
+- [ ] **Fenêtre** — remplacer la photo par une version **haute résolution**
+- [ ] **Façade** — le « **théâtre** » + la façade « **RZ** » (+ « la façade de chaque ») ⛔
+
+### Déco / Finition
+- [ ] **Dorure** — ajouter **Oiron** + **Hôtel de la Marine** (+ **Vendôme** & **Zurich** ⛔)
+- [ ] **Mosaïque** — ajouter le « **dragon** » ⛔
+- [ ] **Peinture** — ajouter **Hôtel de la Marine**
+
+---
+
+## 📸 Images à fournir / identifier — Maxime
+
+> 👉 **Ajouter les images manquantes dans le fichier ZIP de la banque d'images**
+> (`wetransfer_banque-images-site`), avec un nom clair, ou préciser à quoi
+> correspondent les candidates ci-dessous.
+
+### 1. À IDENTIFIER (les fichiers existent, dis-moi lequel c'est)
+Candidates dans le dossier de travail `_a_identifier/` :
 
 | Catégorie | Question | Fichiers candidats |
 |---|---|---|
@@ -22,7 +52,7 @@ Candidates rassemblées dans le dossier de travail `_a_identifier/` :
 | **Mosaïque** | Lequel montre le « dragon » ? | `MOSAIQUE-artsdeco-15…20` |
 | **Façade** | Lequel est le « théâtre » ? Lequel porte les initiales « RZ » ? | `FACADE-residences-*`, `FACADE-espacespro-*` |
 
-### 2. Photos MANQUANTES (introuvables — à fournir dans le ZIP)
+### 2. MANQUANTES (introuvables — à fournir dans le ZIP)
 
 | Catégorie | Réalisation attendue |
 |---|---|
@@ -32,20 +62,21 @@ Candidates rassemblées dans le dossier de travail `_a_identifier/` :
 | **Chambre** | projet **client privé** |
 | **Salon** | projet **client privé** |
 
-### 3. Photos à AMÉLIORER (qualité)
-- **Fenêtre** (extérieur) : remplacer la photo actuelle par une version **haute résolution**.
-
 ---
 
 ## ✅ Déjà fait
 - Banque d'images libres de droits extraite dans `assets/` (préfixe `banque-`).
-- **Sol** : ajout de la réalisation **Opéra Garnier — plancher de scène**.
+- **Sol** : ajout de la réalisation **Opéra Garnier — plancher de scène** (2 sites).
+- README de suivi (ce fichier) sur les 2 dépôts.
 
-## Source des contenus
-Les réalisations (photos + titres + descriptions) proviennent des 4 PowerPoints
-de référence (`HERITAGE ET MEMOIRE`, `Résidences d'exceptions`,
-`Espaces pro réinventés`, `ESPACES ET STRUCTURES`).
+## Source des contenus & norme
+Réalisations (photos + titres + descriptions) issues des **4 PowerPoints** de
+référence : `HERITAGE ET MEMOIRE`, `Résidences d'exceptions`,
+`Espaces pro réinventés`, `ESPACES ET STRUCTURES`.
 
 **Norme des titres :** la matière + le lieu/monument dans le titre ; le
 sous-traitant qui a réalisé (SELE, Mériguet, Tollis, Renofors…) en petit dans
-la description.
+la description. Réutiliser les descriptions existantes.
+
+**Images de catégories** (cartes Intérieur/Extérieur) = génériques / libres de
+droits, **jamais** une photo de réalisation.
