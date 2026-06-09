@@ -5,78 +5,73 @@ Deux dépôts jumeaux : **site complet** (`majestis`) et **vitrine** (`majestis_
 
 ---
 
-## 🗺️ Étapes restantes — feuille de route
+## 🗺️ Avancement de la réorganisation photos
 
-> Tout s'applique **sur les 2 sites**, **1 commit par catégorie** (rollback facile).
+> Tout est appliqué **sur les 2 sites**, **1 commit par catégorie** (rollback facile).
 > ⛔ = bloqué tant que Maxime n'a pas fourni/identifié la photo (voir § Images plus bas).
 
 ### Intérieur
-- [x] **Sol** — Opéra Garnier (plancher de scène) ✅
-- [ ] **Sol** — ajouter **Oiron** (parquet), **SHOAH** (vues où l'on voit le sol), **SELE** (dallage)
-- [ ] **Mur** — ajouter les photos **SHOAH** où l'on voit le mur (boiseries / pierre de taille)
-- [ ] **Charpente** — ajouter le « **gymnase** » ⛔
-- [ ] **Bibliothèque** — ajouter la réalisation (il n'y en a qu'une) ⛔
-- [ ] **Salle de bain** — reprendre les **2 photos déjà dans Sol** (doublons acceptés)
-- [ ] **Dressing** — ajouter la réalisation (« dans le PowerPoint ») ⛔
-- [ ] **Escaliers** — **séparer** escalier intérieur / escalier extérieur
-- [ ] **Chambre** — projet **client privé** ⛔
-- [ ] **Salon** — projet **client privé** ⛔
+- [x] **Sol** — Opéra Garnier, Château d'Oiron (parquet), Mémorial de la Shoah (chevrons), dallage SELE
+- [x] **Mur** — Mémorial de la Shoah (boiseries & lambris)
+- [x] **Salle de bain** — salles d'eau en pierre naturelle (reprise des photos Sol)
+- [x] **Escaliers** — séparation intérieur / extérieur (Cour d'honneur déplacé en extérieur)
+- [ ] **Charpente** — « gymnase » ⛔
+- [ ] **Bibliothèque** — la réalisation (1) ⛔
+- [ ] **Dressing** — la réalisation ⛔
+- [ ] **Chambre** — client privé ⛔ *(page inexistante — voir note)*
+- [ ] **Salon** — client privé ⛔ *(page inexistante — voir note)*
 
 ### Extérieur
-- [ ] **Pont** — **Alexandre III** (Tollis)
-- [ ] **Couronne d'Or** — **Château des Ducs de Bretagne** ⚠️ corriger la carte actuelle qui montre les **Invalides** (faux)
-- [ ] **Entrée** — **État-Major de Compiègne**
-- [ ] **Clocher** — **église Saint-Sauveur**
-- [ ] **Fenêtre** — remplacer la photo par une version **haute résolution**
-- [ ] **Façade** — le « **théâtre** » + la façade « **RZ** » (+ « la façade de chaque ») ⛔
+- [x] **Clocher** — église Saint-Sauveur (clocher XIIe, taille de pierre)
+- [x] **Entrée** — État-Major de Compiègne (entrée + escaliers)
+- [x] **Couronne d'Or** — Château des Ducs de Bretagne (linteaux ouvragés)
+- [x] **Escalier extérieur** — Cour d'honneur, escalier double en pierre
+- [ ] **Pont** — Alexandre III ⛔ *(page inexistante — voir note)*
+- [ ] **Façade** — « théâtre » + « RZ » ⛔
+- [ ] **Fenêtre** — remplacer par une version **haute résolution** ⛔
+- [ ] **Couronne d'Or — carte** : remplacer l'image de la carte (dôme des Invalides, faux) par un visuel générique
 
 ### Déco / Finition
-- [ ] **Dorure** — ajouter **Oiron** + **Hôtel de la Marine** (+ **Vendôme** & **Zurich** ⛔)
-- [ ] **Mosaïque** — ajouter le « **dragon** » ⛔
-- [ ] **Peinture** — ajouter **Hôtel de la Marine**
+- [x] **Dorure** — Château d'Oiron (lambris dorés) + Hôtel de la Marine (ors)
+- [x] **Peinture** — Hôtel de la Marine (décors peints)
+- [ ] **Dorure** — Hôtel **Vendôme** & Hôtel **Zurich** ⛔
+- [ ] **Mosaïque** — le « dragon » ⛔
 
 ---
 
-## 📸 Images à fournir / identifier — Maxime
+## ⚠️ Décisions attendues de Maxime
 
-> 👉 **Ajouter les images manquantes dans le fichier ZIP de la banque d'images**
-> (`wetransfer_banque-images-site`), avec un nom clair, ou préciser à quoi
-> correspondent les candidates ci-dessous.
+1. **Chambre / Salon / Pont / Cuisine n'existent PAS** comme pages. Je ne les ai pas
+   créées (règle : ne pas créer de catégorie sans demande explicite). **Faut-il créer
+   ces pages ?** Si oui, les photos « client privé » (banque d'images) et Alexandre III
+   pourront y être classées.
+2. **Banque d'images** (`assets/banque-*`) : à classer comme réalisations Chambre/Salon
+   une fois les pages créées.
 
-### 1. À IDENTIFIER (les fichiers existent, dis-moi lequel c'est)
-Candidates dans le dossier de travail `_a_identifier/` :
+## 📸 Images à fournir / identifier
 
-| Catégorie | Question | Fichiers candidats |
+> 👉 **Ajouter dans le ZIP de la banque** (nom clair) ou préciser la correspondance.
+> Candidates dans le dossier de travail `_a_identifier/`.
+
+| Catégorie | À faire | Fichiers candidats |
 |---|---|---|
-| **Charpente** | Lequel est le « gymnase » ? | `CHARPENTE-cruard-*` ou `CHARPENTE-centre-aquatique-*` |
-| **Mosaïque** | Lequel montre le « dragon » ? | `MOSAIQUE-artsdeco-15…20` |
-| **Façade** | Lequel est le « théâtre » ? Lequel porte les initiales « RZ » ? | `FACADE-residences-*`, `FACADE-espacespro-*` |
-
-### 2. MANQUANTES (introuvables — à fournir dans le ZIP)
-
-| Catégorie | Réalisation attendue |
-|---|---|
-| **Dorure** | Hôtel **Place Vendôme** · Hôtel **Zurich** |
-| **Bibliothèque** | la réalisation (il n'y en a qu'une) |
-| **Dressing** | la réalisation (« dans le PowerPoint ») |
-| **Chambre** | projet **client privé** |
-| **Salon** | projet **client privé** |
+| **Charpente** | quel est le « gymnase » ? | `CHARPENTE-cruard-*` / `CHARPENTE-centre-aquatique-*` |
+| **Mosaïque** | quel montre le « dragon » ? | `MOSAIQUE-artsdeco-15…20` |
+| **Façade** | « théâtre » ? « RZ » ? | `FACADE-residences-*`, `FACADE-espacespro-*` |
+| **Dorure** | Hôtel **Vendôme**, Hôtel **Zurich** | à fournir |
+| **Bibliothèque** | la réalisation (1) | à fournir |
+| **Dressing** | la réalisation | à fournir |
+| **Fenêtre** | version haute résolution | à fournir |
 
 ---
-
-## ✅ Déjà fait
-- Banque d'images libres de droits extraite dans `assets/` (préfixe `banque-`).
-- **Sol** : ajout de la réalisation **Opéra Garnier — plancher de scène** (2 sites).
-- README de suivi (ce fichier) sur les 2 dépôts.
 
 ## Source des contenus & norme
-Réalisations (photos + titres + descriptions) issues des **4 PowerPoints** de
-référence : `HERITAGE ET MEMOIRE`, `Résidences d'exceptions`,
-`Espaces pro réinventés`, `ESPACES ET STRUCTURES`.
+Réalisations (photos + titres + descriptions) issues des **4 PowerPoints** :
+`HERITAGE ET MEMOIRE`, `Résidences d'exceptions`, `Espaces pro réinventés`,
+`ESPACES ET STRUCTURES`.
 
-**Norme des titres :** la matière + le lieu/monument dans le titre ; le
-sous-traitant qui a réalisé (SELE, Mériguet, Tollis, Renofors…) en petit dans
-la description. Réutiliser les descriptions existantes.
+**Norme des titres :** matière + lieu/monument dans le titre ; le sous-traitant qui a
+réalisé (SELE, Mériguet, Tollis, Renofors…) en petit dans la description.
 
-**Images de catégories** (cartes Intérieur/Extérieur) = génériques / libres de
-droits, **jamais** une photo de réalisation.
+**Images de catégories** (cartes Intérieur/Extérieur) = génériques / libres de droits,
+**jamais** une photo de réalisation.
