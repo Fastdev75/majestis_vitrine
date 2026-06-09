@@ -280,8 +280,6 @@
   /* Landscape variant — adapts to source images natively (no upscaling blur) */
   .real-carousel.is-landscape {
     aspect-ratio: 5/4;
-    max-width: 500px;
-    margin: 0 auto;
   }
   /* Last 4 articles use smaller source images (106-223 px wide).
      Shrink containers and match each native orientation to avoid crop+upscale blur. */
@@ -343,6 +341,7 @@
     margin-bottom: 26px;
     text-wrap: balance;
   }
+  .real-title span, .real-title em { display: block; }
   .real-title em {
     font-style: italic;
     font-weight: 500;
