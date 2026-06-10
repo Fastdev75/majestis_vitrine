@@ -12,7 +12,7 @@ Deux dépôts jumeaux : **site complet** (`majestis`) et **vitrine** (`majestis_
 
 ### Intérieur
 - [x] **Sol** — Opéra Garnier, Oiron (parquet), Mémorial de la Shoah (chevrons), dallage SELE
-- [x] **Mur** — Mémorial de la Shoah (boiseries & lambris)
+- [x] **Mur** — Mémorial de la Shoah (4 photos)
 - [x] **Salle de bain** — pierre naturelle (Sol) + marbre (banque)
 - [x] **Escaliers** — séparation int/ext + escalier tournant pierre (banque)
 - [x] **Dressing** — 2 dressings (banque)
@@ -22,12 +22,12 @@ Deux dépôts jumeaux : **site complet** (`majestis`) et **vitrine** (`majestis_
 - [ ] **Chambre** — client privé ⛔ *(aucune photo de chambre dans la banque + page inexistante)*
 
 ### Extérieur
-- [x] **Clocher** — église Saint-Sauveur
-- [x] **Entrée** — État-Major de Compiègne
-- [x] **Couronne d'Or** — Château des Ducs de Bretagne
-- [x] **Escalier extérieur** — Cour d'honneur, escalier double en pierre
+- [x] **Clocher** — église Saint-Sauveur (3 photos)
+- [x] **Entrée** — État-Major de Compiègne (4 photos)
+- [x] **Couronne d'Or** — Château des Ducs de Bretagne (5 photos dont 4000px)
+- [x] **Escalier extérieur** — Cour d'honneur + État-Major de Compiègne (HD)
 - [ ] **Pont** — Alexandre III ⛔ *(page inexistante)*
-- [ ] **Façade** — « théâtre » + « RZ » ⛔
+- [x] **Façade** — Château de Chantilly (Pavillon Nord) ✓ · « théâtre » (Rochefort) identifié mais photos en 148px seulement → ⛔ fournir une version HD · « RZ » toujours à identifier ⛔
 - [ ] **Fenêtre** — version **haute résolution** ⛔
 - [ ] **Couronne d'Or — carte** : image générique (la carte montre les Invalides, faux)
 
@@ -60,6 +60,11 @@ Deux dépôts jumeaux : **site complet** (`majestis`) et **vitrine** (`majestis_
 | **Dorure** | Hôtel **Vendôme**, Hôtel **Zurich** |
 | **Bibliothèque** | la réalisation |
 | **Fenêtre** | version haute résolution |
+
+## 🗂 Dossier `_a_definir/` (photos en attente)
+- `THEATRE-rochefort-…` : le théâtre (Façade) n'existe qu'en 148px → fournir HD
+- `PONT-alexandre3-…` : 3 photos HD prêtes, mais la page **Pont** n'existe pas → créer ?
+- `SOCRA-atelier-…` : atelier d'œuvres d'art (sculpture) → aucune catégorie ne correspond
 
 ## ❓ Décisions attendues
 - **Chambre / Pont / Cuisine** : pages inexistantes, non créées. Les créer ? (Chambre n'a de toute
