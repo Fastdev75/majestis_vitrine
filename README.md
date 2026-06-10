@@ -26,7 +26,7 @@ Deux dépôts jumeaux : **site complet** (`majestis`) et **vitrine** (`majestis_
 - [x] **Entrée** — État-Major de Compiègne (4 photos)
 - [x] **Couronne d'Or** — Château des Ducs de Bretagne (5 photos dont 4000px)
 - [x] **Escalier extérieur** — Cour d'honneur + État-Major de Compiègne (HD)
-- [ ] **Pont** — Alexandre III ⛔ *(page inexistante)*
+- [x] **Pont Alexandre III** — métallerie & ors → placé dans **Dorure** (pas un pont à montrer, mais la ferronnerie/dorure réalisée dessus)
 - [x] **Façade** — Château de Chantilly (Pavillon Nord) ✓ · « théâtre » (Rochefort) identifié mais photos en 148px seulement → ⛔ fournir une version HD · « RZ » toujours à identifier ⛔
 - [ ] **Fenêtre** — version **haute résolution** ⛔
 - [ ] **Couronne d'Or — carte** : image générique (la carte montre les Invalides, faux)
@@ -63,12 +63,11 @@ Deux dépôts jumeaux : **site complet** (`majestis`) et **vitrine** (`majestis_
 
 ## 🗂 Dossier `_a_definir/` (photos en attente)
 - `THEATRE-rochefort-…` : le théâtre (Façade) n'existe qu'en 148px → fournir HD
-- `PONT-alexandre3-…` : 3 photos HD prêtes, mais la page **Pont** n'existe pas → créer ?
 - `SOCRA-atelier-…` : atelier d'œuvres d'art (sculpture) → aucune catégorie ne correspond
 
 ## ❓ Décisions attendues
-- **Chambre / Pont / Cuisine** : pages inexistantes, non créées. Les créer ? (Chambre n'a de toute
-  façon aucune photo dans la banque ; Alexandre III attend une page Pont.)
+- **Chambre / Cuisine** : pages inexistantes, non créées. Les créer ? (Chambre n'a de toute
+  façon aucune photo dans la banque.)
 
 ---
 
