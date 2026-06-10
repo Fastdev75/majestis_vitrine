@@ -11,21 +11,24 @@ Deux dépôts jumeaux : **site complet** (`majestis`) et **vitrine** (`majestis_
 > ⛔ = bloqué tant que Maxime n'a pas fourni/identifié la photo.
 
 ### Intérieur
-- [x] **Sol** — Opéra Garnier, Oiron (parquet), Mémorial de la Shoah (chevrons), dallage SELE
+- [x] **Sol** — réorganisé : carrelage pierre / pierre naturelle séparés (ATN), marbre veiné (ATN),
+  Versailles, Opéra Garnier (Renofors), Oiron, Shoah (photo **sol** remplacée — plus la fenêtre), dallage SELE
 - [x] **Mur** — Mémorial de la Shoah (4 photos)
-- [x] **Salle de bain** — pierre naturelle (Sol) + marbre (banque)
-- [x] **Escaliers** — séparation int/ext + escalier tournant pierre (banque)
-- [x] **Dressing** — 2 dressings (banque)
-- [x] **Salon** — **catégorie créée** + 9 salons/séjours (banque) + carte au hub Intérieur
-- [x] **Charpente** — bois lamellé collé, arcs de grande portée (le « gymnase », Renofors)
-- [ ] **Bibliothèque** — la réalisation ⛔
+- [x] **Salle de bain** — pierre naturelle (ATN) + marbre (banque) ; photo au carrelage bleu retirée (reste dans Sol)
+- [x] **Escaliers** — intérieurs uniquement, doublon « client privé » fusionné, titres à la norme
+- [x] **Dressing** — 2 dressings (banque) · ⛔ le dressing « ATN » est **introuvable dans les 4 PowerPoints**
+  (vérifié slide par slide) → renvoyer la photo
+- [x] **Salon** — 9 salons/séjours (banque)
+- [x] **Charpente** — bois lamellé collé (Renofors)
+- [x] **Bibliothèque** — boiseries Ateliers Perrault (photo du PowerPoint Résidences, **105 px seulement** → fournir une version HD)
+- [x] **Plafond** — **catégorie retirée** (carte + menu) à la demande de Maxime
 - [ ] **Chambre** — client privé ⛔ *(aucune photo de chambre dans la banque + page inexistante)*
 
 ### Extérieur
-- [x] **Clocher** — église Saint-Sauveur (3 photos)
-- [x] **Entrée** — État-Major de Compiègne (4 photos)
-- [x] **Couronne d'Or** — Château des Ducs de Bretagne (5 photos dont 4000px)
-- [x] **Escalier extérieur** — Cour d'honneur + État-Major de Compiègne (HD)
+- [x] **Clocher** — église Saint-Sauveur (Compagnons de Saint Jacques)
+- [x] **Entrée** — État-Major de Compiègne (3 photos, Léon-Noël) — la photo d'escalier déplacée vers Escalier extérieur
+- [x] **Couronne d'Or** — Château des Ducs de Bretagne (Lefèvre)
+- [x] **Escalier extérieur** — État-Major de Compiègne (4 photos, Léon-Noël)
 - [x] **Pont Alexandre III** — métallerie & ors → placé dans **Dorure** (pas un pont à montrer, mais la ferronnerie/dorure réalisée dessus)
 - [x] **Façade** — Château de Chantilly (Pavillon Nord) ✓ · « théâtre » (Rochefort) identifié mais photos en 148px seulement → ⛔ fournir une version HD · façade du château à la chaux ✓ · « RZ » toujours à identifier ⛔
 - [ ] **Fenêtre** — version **haute résolution** ⛔
@@ -56,8 +59,10 @@ Deux dépôts jumeaux : **site complet** (`majestis`) et **vitrine** (`majestis_
 |---|---|
 | **Façade** | photo « RZ » (initiales) toujours à identifier + théâtre Rochefort en HD |
 | **Dorure** | Hôtel **Vendôme**, Hôtel **Zurich** |
-| **Bibliothèque** | la réalisation |
+| **Bibliothèque** | version **HD** (l'actuelle vient du PowerPoint en 105 px) |
+| **Dressing** | la photo « ATN » — absente des 4 PowerPoints, à renvoyer |
 | **Fenêtre** | version haute résolution |
+| **Photos floues** | Maxime renvoie les versions nettes |
 
 ## 🗂 Dossier `_a_definir/` (photos en attente)
 - `THEATRE-rochefort-…` : le théâtre (Façade) n'existe qu'en 148px → fournir HD
@@ -71,6 +76,11 @@ Deux dépôts jumeaux : **site complet** (`majestis`) et **vitrine** (`majestis_
 
 ## Source & norme
 Réalisations issues des **4 PowerPoints** (`HERITAGE ET MEMOIRE`, `Résidences d'exceptions`,
-`Espaces pro réinventés`, `ESPACES ET STRUCTURES`). **Titres** : matière + lieu/monument ;
-sous-traitant (SELE, Mériguet, Tollis, Renofors…) en petit dans la description.
+`Espaces pro réinventés`, `ESPACES ET STRUCTURES`).
+**Titres (norme appliquée partout)** : le **truc + la matière** (ex. « Escalier en marbre »,
+« Clocher — hydrogommage au mortier de chaux ») ; le **lieu/monument** (château, hôtel…) va en
+**description** ; le **réalisateur** (trouvé dans le titre des slides : SELE, Mériguet-Carrère,
+Tollis, Renofors, Léon-Noël, Lefèvre, Jacquet Barberot, Compagnons de Saint Jacques, ATN,
+Ateliers Perrault…) en petit **dans la description uniquement**, jamais dans le titre.
+Exceptions retitrage : Fenêtre (commence par « Fenêtre » + style), Peintures, Mosaïque.
 Quand la banque sert (visuels génériques), description rédigée d'après le contenu de l'image.
