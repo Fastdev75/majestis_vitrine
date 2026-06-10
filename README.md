@@ -17,7 +17,7 @@ Deux dépôts jumeaux : **site complet** (`majestis`) et **vitrine** (`majestis_
 - [x] **Escaliers** — séparation int/ext + escalier tournant pierre (banque)
 - [x] **Dressing** — 2 dressings (banque)
 - [x] **Salon** — **catégorie créée** + 9 salons/séjours (banque) + carte au hub Intérieur
-- [ ] **Charpente** — « gymnase » ⛔
+- [x] **Charpente** — bois lamellé collé, arcs de grande portée (le « gymnase », Renofors)
 - [ ] **Bibliothèque** — la réalisation ⛔
 - [ ] **Chambre** — client privé ⛔ *(aucune photo de chambre dans la banque + page inexistante)*
 
@@ -27,7 +27,7 @@ Deux dépôts jumeaux : **site complet** (`majestis`) et **vitrine** (`majestis_
 - [x] **Couronne d'Or** — Château des Ducs de Bretagne (5 photos dont 4000px)
 - [x] **Escalier extérieur** — Cour d'honneur + État-Major de Compiègne (HD)
 - [x] **Pont Alexandre III** — métallerie & ors → placé dans **Dorure** (pas un pont à montrer, mais la ferronnerie/dorure réalisée dessus)
-- [x] **Façade** — Château de Chantilly (Pavillon Nord) ✓ · « théâtre » (Rochefort) identifié mais photos en 148px seulement → ⛔ fournir une version HD · « RZ » toujours à identifier ⛔
+- [x] **Façade** — Château de Chantilly (Pavillon Nord) ✓ · « théâtre » (Rochefort) identifié mais photos en 148px seulement → ⛔ fournir une version HD · façade du château à la chaux ✓ · « RZ » toujours à identifier ⛔
 - [ ] **Fenêtre** — version **haute résolution** ⛔
 - [ ] **Couronne d'Or — carte** : image générique (la carte montre les Invalides, faux)
 
@@ -35,7 +35,7 @@ Deux dépôts jumeaux : **site complet** (`majestis`) et **vitrine** (`majestis_
 - [x] **Dorure** — Oiron (lambris dorés) + Hôtel de la Marine (ors)
 - [x] **Peinture** — Hôtel de la Marine (décors peints)
 - [ ] **Dorure** — Hôtel **Vendôme** & Hôtel **Zurich** ⛔
-- [ ] **Mosaïque** — le « dragon » ⛔
+- [x] **Mosaïque** — le **dragon** du Centre aquatique de l'Amandinois (Tollis, HD)
 
 ---
 
@@ -54,9 +54,7 @@ Deux dépôts jumeaux : **site complet** (`majestis`) et **vitrine** (`majestis_
 
 | Catégorie | À faire |
 |---|---|
-| **Charpente** | quel est le « gymnase » ? (`CHARPENTE-cruard-*` / `CHARPENTE-centre-aquatique-*`) |
-| **Mosaïque** | quel montre le « dragon » ? (`MOSAIQUE-artsdeco-15…20`) |
-| **Façade** | « théâtre » ? « RZ » ? (`FACADE-residences-*`, `FACADE-espacespro-*`) |
+| **Façade** | photo « RZ » (initiales) toujours à identifier + théâtre Rochefort en HD |
 | **Dorure** | Hôtel **Vendôme**, Hôtel **Zurich** |
 | **Bibliothèque** | la réalisation |
 | **Fenêtre** | version haute résolution |
