@@ -16,8 +16,7 @@ Deux dépôts jumeaux : **site complet** (`majestis`) et **vitrine** (`majestis_
 - [x] **Mur** — Mémorial de la Shoah (4 photos)
 - [x] **Salle de bain** — pierre naturelle (ATN) + marbre (banque) ; photo au carrelage bleu retirée (reste dans Sol)
 - [x] **Escaliers** — intérieurs uniquement, doublon « client privé » fusionné, titres à la norme
-- [x] **Dressing** — 2 dressings (banque) · ⛔ le dressing « ATN » est **introuvable dans les 4 PowerPoints**
-  (vérifié slide par slide) → renvoyer la photo
+- [x] **Dressing** — 3 dressings : 2 banque + le dressing **ATN** (photo fournie par Maxime, verre fumé & métal)
 - [x] **Salon** — 9 salons/séjours (banque)
 - [x] **Charpente** — bois lamellé collé (Renofors)
 - [x] **Bibliothèque** — boiseries Ateliers Perrault (photo du PowerPoint Résidences, **105 px seulement** → fournir une version HD)
@@ -60,7 +59,6 @@ Deux dépôts jumeaux : **site complet** (`majestis`) et **vitrine** (`majestis_
 | **Façade** | photo « RZ » (initiales) toujours à identifier + théâtre Rochefort en HD |
 | **Dorure** | Hôtel **Vendôme**, Hôtel **Zurich** |
 | **Bibliothèque** | version **HD** (l'actuelle vient du PowerPoint en 105 px) |
-| **Dressing** | la photo « ATN » — absente des 4 PowerPoints, à renvoyer |
 | **Fenêtre** | version haute résolution |
 | **Photos floues** | Maxime renvoie les versions nettes |
 
