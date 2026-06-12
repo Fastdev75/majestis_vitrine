@@ -19,7 +19,7 @@ Deux dépôts jumeaux : **site complet** (`majestis`) et **vitrine** (`majestis_
 - [x] **Dressing** — 3 dressings : 2 banque + le dressing **ATN** (photo fournie par Maxime, verre fumé & métal)
 - [x] **Salon** — 9 salons/séjours (banque)
 - [x] **Charpente** — bois lamellé collé (Renofors)
-- [x] **Bibliothèque** — boiseries Ateliers Perrault (photo du PowerPoint Résidences, **105 px seulement** → fournir une version HD)
+- [x] **Bibliothèque** — boiseries Ateliers Perrault en **HD** (la photo existait déjà : `res-renov-perrault2-01.png`)
 - [x] **Plafond** — **catégorie retirée** (carte + menu) à la demande de Maxime
 - [ ] **Chambre** — client privé ⛔ *(aucune photo de chambre dans la banque + page inexistante)*
 
@@ -36,7 +36,7 @@ Deux dépôts jumeaux : **site complet** (`majestis`) et **vitrine** (`majestis_
 ### Déco / Finition
 - [x] **Dorure** — Oiron (lambris dorés) + Hôtel de la Marine (ors)
 - [x] **Peinture** — Hôtel de la Marine (décors peints)
-- [ ] **Dorure** — Hôtel **Vendôme** & Hôtel **Zurich** ⛔
+- [x] **Dorure** — Hôtel Chopard **Place Vendôme** (Mériguet-Carrère) & Hôtel Baur au Lac **Zurich** (Baguès) — photos identifiées dans les assets et ajoutées
 - [x] **Mosaïque** — le **dragon** du Centre aquatique de l'Amandinois (Tollis, HD)
 
 ---
@@ -56,11 +56,8 @@ Deux dépôts jumeaux : **site complet** (`majestis`) et **vitrine** (`majestis_
 
 | Catégorie | À faire |
 |---|---|
-| **Façade** | photo « RZ » (initiales) toujours à identifier + théâtre Rochefort en HD |
-| **Dorure** | Hôtel **Vendôme**, Hôtel **Zurich** |
-| **Bibliothèque** | version **HD** (l'actuelle vient du PowerPoint en 105 px) |
-| **Fenêtre** | version haute résolution |
-| **Photos floues** | Maxime renvoie les versions nettes |
+| **Façade** | photo « RZ » : **introuvable dans tous les supports** (4 PowerPoints, 196 uploads, fichiers collés — vérifié image par image) → Maxime doit l'envoyer · théâtre Rochefort (Coupe d'Or) en HD |
+| **Fenêtre** | photos d'origine HD bienvenues (versions actuelles = upscale IA) |
 
 ## 🗂 Dossier `_a_definir/` (photos en attente)
 - `THEATRE-rochefort-…` : le théâtre (Façade) n'existe qu'en 148px → fournir HD
